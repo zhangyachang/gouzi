@@ -1,4 +1,22 @@
 @charset "utf-8"
 
-.content{width:1240px; margin:auto;}
-body{}
+html{font-size:100px;}
+body{
+	min-width:320px;	/*为什么这里不用rem，因为这是body的宽度，如果用rem那就一直都是1，没有办法缩小 */
+	max-width:640px;
+	margin:auto;
+}
+.gz{background:#666;}
+.gz .title{text-align:center;}
+.gz .title h2{font:normal 0.3rem/0.6rem ""; color:orange;}
+.gz .main{width:6rem; margin:auto; padding:0.6rem 0; border-top:1px solid transparent; border-radius:0.1rem; background:url("../images/part1/5.jpg") no-repeat center/6rem auto;}
+.page p{text-align:center; font:0.2rem/0.3rem "";}
+/* .gz .main{font-size:0.16rem;} */
+.gz .main .news{width:3.6rem; margin: auto; box-shadow:0 0 10px 0 #000; background:rgba(255,255,225,0.5);}
+.gz .main .news h2{width:3rem; margin:2rem auto 0; font:0.3rem/0.5rem ""; border-bottom:1px solid red;}
+.gz .main .news p{width:3rem; margin:auto; font:0.16rem/0.4rem "";}
+.gz .main .bottom p{width:2rem; margin:0.4rem auto; padding:0.1rem 0; border-radius:0.4rem;  background:rgba(0,0,0,.5); font:0.24rem/0.3rem "";  color:yellow; text-align:center;}
+.gz .hot{padding-bottom:0.2rem;}
+.gz .hot ul{text-align:center;}
+.gz .hot ul li{display:inline-block;}
+.gz .hot ul li img{width:1.6rem; height:1rem;}
