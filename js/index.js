@@ -16,29 +16,14 @@ function rem() {
 
 
 
-var mySwiper = new Swiper('.swiper-container',{
-		effect : 'fade',
-		autoplay:1000,
-		fade: {
-		  crossFade: false,
-		}
-		}) 
+var mySwiper = new Swiper ('#swiper1', {
+  /*  autoplay: 3000,  */
+    loop: true,
+    paginationClickable:true,	//让分页器可以点击切换
 
-var mySwiper = new Swiper('.swiper-container',{
-			effect : 'fade',
-			autoplay:1000,
-			fade: {
-			  crossFade: false,
-			},
-			
-		
-		// 如果需要分页器
-		pagination: '.swiper-pagination',
-		
-		// 如果需要前进后退按钮
-		nextButton: '.swiper-button-next',
-		prevButton: '.swiper-button-prev',
-		
-		// 如果需要滚动条
-		scrollbar: '.swiper-scrollbar',
-		 }) 
+    // 如果需要分页器
+    pagination: '.swiper-pagination'
+});
+
+
+
