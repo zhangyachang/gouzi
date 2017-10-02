@@ -16,14 +16,32 @@ function rem() {
 
 
 
-var mySwiper = new Swiper ('#swiper1', {
-  /*  autoplay: 3000,  */
-    loop: true,
-    paginationClickable:true,	//让分页器可以点击切换
+// var mySwiper = new Swiper ('#swiper1', {
+//   /*  autoplay: 3000,  */
+//     loop: true,
+//     paginationClickable:true,	//让分页器可以点击切换
 
-    // 如果需要分页器
-    pagination: '.swiper-pagination'
-});
+//     // 如果需要分页器
+//     pagination: '.swiper-pagination'
+// });
+
+
+
+
+var mySwiper = new Swiper('#swiper1',{
+    effect : 'coverflow',
+    slidesPerView: 3,
+    centeredSlides: true,
+    coverflow: {
+            rotate: 30,
+            stretch: 10,
+            depth: 60,
+            modifier: 2,
+            slideShadows : true,
+        }
+    //pagination: '.swiper-pagination';
+})
+
 
 
 
