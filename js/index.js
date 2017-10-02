@@ -30,14 +30,14 @@ function rem() {
 
 var mySwiper = new Swiper('#swiper1',{
     effect : 'coverflow',
-    slidesPerView: 3,
+    slidesPerView: 1,   //一个页面可以显示几个
     centeredSlides: true,
     coverflow: {
-            rotate: 30,
-            stretch: 10,
-            depth: 60,
-            modifier: 2,
-            slideShadows : true,
+            rotate: 50,
+            stretch: 20,
+            depth: 100,
+            modifier: 1,
+            slideShadows : false,
         }
     //pagination: '.swiper-pagination';
 })
